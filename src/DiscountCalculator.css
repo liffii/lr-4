@@ -1,0 +1,268 @@
+.calculator-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, sans-serif;
+}
+
+.calculator-title {
+  margin: 0 0 24px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.product-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.product-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.product-card__header h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.remove-button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field__label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.field__input {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 2px solid #d0d5dd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.field__input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.field__input--error {
+  border-color: #ef4444;
+}
+
+.field__select {
+  cursor: pointer;
+}
+
+.field__error {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #ef4444;
+}
+
+.field__success {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #16a34a;
+}
+
+.add-product-button {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 24px;
+  border: 2px dashed #3b82f6;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.settings {
+  margin-bottom: 24px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.settings__title {
+  margin: 0 0 20px;
+  font-size: 17px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox-field input {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.range-input {
+  width: 100%;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn--primary {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #2563eb;
+}
+
+.btn--secondary {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.btn--secondary:hover {
+  background: #e5e7eb;
+}
+
+.results {
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.results__title {
+  margin: 16px 0 12px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.product-result {
+  margin-bottom: 20px;
+}
+
+.product-result h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.results__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.results__table td {
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.results__table td:first-child {
+  color: #6b7280;
+}
+
+.results__value {
+  text-align: right;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.results__value--discount {
+  color: #ef4444;
+}
+
+.results__row--total td {
+  padding-top: 14px;
+  border-top: 2px solid #111827;
+  border-bottom: none;
+  font-size: 17px;
+}
+
+.results__row--total td:first-child {
+  color: #111827;
+  font-weight: 700;
+}
+
+.total-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #eff6ff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.total-result strong {
+  font-size: 20px;
+  color: #2563eb;
+}
+
+.history {
+  margin-top: 28px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+}
+
+.history-item span:last-child {
+  font-weight: 600;
+}
